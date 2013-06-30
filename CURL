@@ -1,0 +1,39 @@
+curl -v XPOST -d '{"method":"GetReportList","application_id":"xxx","login":"xxx","token":"xxx"}' 'https://api.direct.yandex.ru/json-api/v4/'
+* Adding handle: conn: 0x7fd7f2004000
+* Adding handle: send: 0
+* Adding handle: recv: 0
+* Curl_addHandleToPipeline: length: 1
+* - Conn 0 (0x7fd7f2004000) send_pipe: 1, recv_pipe: 0
+* Could not resolve host: XPOST
+* Closing connection 0
+curl: (6) Could not resolve host: XPOST
+* Adding handle: conn: 0x7fd7f3001800
+* Adding handle: send: 0
+* Adding handle: recv: 0
+* Curl_addHandleToPipeline: length: 1
+* - Conn 1 (0x7fd7f3001800) send_pipe: 1, recv_pipe: 0
+* About to connect() to api.direct.yandex.ru port 443 (#1)
+*   Trying 213.180.204.196...
+* Connected to api.direct.yandex.ru (213.180.204.196) port 443 (#1)
+* TLS 1.0 connection using TLS_RSA_WITH_RC4_128_SHA
+* Server certificate: Yandex Direct
+* Server certificate: YandexExternalCA
+* Server certificate: GTE CyberTrust Global Root
+> POST /json-api/v4/ HTTP/1.1
+> User-Agent: curl/7.30.0
+> Host: api.direct.yandex.ru
+> Accept: */*
+> Content-Length: 77
+> Content-Type: application/x-www-form-urlencoded
+>
+* upload completely sent off: 77 out of 77 bytes
+< HTTP/1.1 200 OK
+* Server nginx is not blacklisted
+< Server: nginx
+< Date: Sun, 30 Jun 2013 22:40:08 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Connection: close
+<
+* Closing connection 1
+{"error_detail":"","error_str":"Authorization error","error_code":53}
