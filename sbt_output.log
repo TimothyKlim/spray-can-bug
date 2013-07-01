@@ -1,0 +1,63 @@
+[0m[[0minfo[0m] [0mLoading global plugins from /Users/timothyklim/.sbt/plugins[0m
+[0m[[0minfo[0m] [0mLoading project definition from /Users/timothyklim/Development/spray-can-bug/project[0m
+[0m[[0minfo[0m] [0mSet current project to test app (in build file:/Users/timothyklim/Development/spray-can-bug/)[0m
+[0m[[0minfo[0m] [0mRunning Main [0m
+17:40:57.025 [test-akka.actor.default-dispatcher-3] INFO  akka.event.slf4j.Slf4jEventHandler - Slf4jEventHandler started
+17:40:57.060 [test-akka.actor.default-dispatcher-3] DEBUG akka.event.EventStream - logger log1-Slf4jEventHandler started
+17:40:57.060 [test-akka.actor.default-dispatcher-3] DEBUG akka.event.EventStream - Default Loggers started
+17:40:57.227 [test-akka.actor.default-dispatcher-2] DEBUG a.a.LocalActorRefProvider$Guardian - now supervising Actor[akka://test/user/IO-HTTP]
+17:40:57.247 [test-akka.actor.default-dispatcher-2] DEBUG spray.can.HttpManager - started (spray.can.HttpManager@3675de9f)
+17:40:57.489 [test-akka.actor.default-dispatcher-7] DEBUG spray.can.HttpManager - now supervising Actor[akka://test/user/IO-HTTP/group-0]
+17:40:57.489 [test-akka.actor.default-dispatcher-7] DEBUG spray.can.HttpManager - now supervising Actor[akka://test/user/IO-HTTP/host-connector-0]
+17:40:57.516 [test-akka.actor.default-dispatcher-7] DEBUG spray.can.client.HttpHostConnector - started (spray.can.client.HttpHostConnector@505aea20)
+17:40:57.517 [test-akka.actor.default-dispatcher-7] DEBUG spray.can.client.HttpHostConnector - now monitoring Actor[akka://test/user/IO-HTTP]
+17:40:57.757 [test-akka.actor.default-dispatcher-3] DEBUG spray.can.client.HttpHostConnector - now supervising Actor[akka://test/user/IO-HTTP/host-connector-0/0]
+17:40:57.761 [test-akka.actor.default-dispatcher-5] DEBUG s.can.client.HttpHostConnectionSlot - started (spray.can.client.HttpHostConnectionSlot@611d8204)
+17:40:57.761 [test-akka.actor.default-dispatcher-5] DEBUG s.can.client.HttpHostConnectionSlot - now monitoring Actor[akka://test/user/IO-HTTP/host-connector-0]
+17:40:57.763 [test-akka.actor.default-dispatcher-5] DEBUG akka://test/user/IO-HTTP/host-connector-0/0 - Attempting new connection to api.direct.yandex.ru/213.180.204.196:443
+17:40:58.170 [test-akka.actor.default-dispatcher-7] DEBUG s.can.client.HttpClientSettingsGroup - started (spray.can.client.HttpClientSettingsGroup@16335dd)
+17:40:58.171 [test-akka.actor.default-dispatcher-7] DEBUG s.can.client.HttpClientSettingsGroup - now monitoring Actor[akka://test/user/IO-HTTP]
+17:40:58.172 [test-akka.actor.default-dispatcher-5] DEBUG s.can.client.HttpClientSettingsGroup - now supervising Actor[akka://test/user/IO-HTTP/group-0/0]
+17:40:58.175 [test-akka.actor.default-dispatcher-5] DEBUG akka://test/user/IO-HTTP/group-0/0 - Attempting connection to api.direct.yandex.ru/213.180.204.196:443
+17:40:58.185 [test-akka.actor.default-dispatcher-5] DEBUG a.a.LocalActorRefProvider$SystemGuardian - now supervising Actor[akka://test/system/IO-TCP]
+17:40:58.191 [test-akka.actor.default-dispatcher-5] DEBUG s.can.client.HttpClientConnection - started (spray.can.client.HttpClientConnection@59b944cd)
+17:40:58.208 [test-akka.actor.default-dispatcher-2] DEBUG akka.routing.RouterConfig$$anon$1 - started (akka.routing.RouterConfig$$anon$1@191910f4)
+17:40:58.208 [test-akka.actor.default-dispatcher-2] DEBUG akka.routing.RouterConfig$$anon$1 - now supervising Actor[akka://test/system/IO-TCP/selectors/$a]
+17:40:58.210 [test-akka.actor.default-dispatcher-2] DEBUG akka.io.TcpManager - started (akka.io.TcpManager@20434b2c)
+17:40:58.210 [test-akka.actor.default-dispatcher-2] DEBUG akka.io.TcpManager - now supervising Actor[akka://test/system/IO-TCP/selectors]
+17:40:58.225 [test-akka.actor.default-dispatcher-4] DEBUG akka.io.SelectionHandler - started (akka.io.SelectionHandler@54589209)
+17:40:58.225 [test-akka.actor.default-dispatcher-4] DEBUG akka.io.SelectionHandler - now monitoring Actor[akka://test/system/IO-TCP/selectors]
+17:40:58.226 [test-akka.actor.default-dispatcher-2] DEBUG akka.io.SelectionHandler - now supervising Actor[akka://test/system/IO-TCP/selectors/$a/0]
+17:40:58.235 [test-akka.actor.default-dispatcher-7] DEBUG s.can.client.HttpClientConnection - now monitoring Actor[akka://test/system/IO-TCP/selectors/$a/0]
+17:40:58.239 [test-akka.actor.default-dispatcher-7] DEBUG akka.io.TcpOutgoingConnection - started (akka.io.TcpOutgoingConnection@1baf7f7f)
+17:40:58.239 [test-akka.actor.default-dispatcher-7] DEBUG akka.io.TcpOutgoingConnection - now monitoring Actor[akka://test/system/IO-TCP/selectors/$a]
+17:40:58.239 [test-akka.actor.default-dispatcher-7] DEBUG akka.io.TcpOutgoingConnection - Attempting connection to [api.direct.yandex.ru/213.180.204.196:443]
+17:40:58.253 [test-akka.actor.default-dispatcher-7] DEBUG akka.io.TcpOutgoingConnection - Connection established to [api.direct.yandex.ru/213.180.204.196:443]
+17:40:58.256 [test-akka.actor.default-dispatcher-2] DEBUG akka://test/user/IO-HTTP/group-0/0 - Connected to api.direct.yandex.ru/213.180.204.196:443
+17:40:58.257 [test-akka.actor.default-dispatcher-5] DEBUG akka.io.TcpOutgoingConnection - now monitoring Actor[akka://test/user/IO-HTTP/group-0/0]
+17:40:58.258 [test-akka.actor.default-dispatcher-5] DEBUG akka://test/user/IO-HTTP/host-connector-0/0 - Connection to api.direct.yandex.ru/213.180.204.196:443 established, dispatching 1 pending requests
+17:40:58.267 [test-akka.actor.default-dispatcher-2] DEBUG akka://test/user/IO-HTTP/host-connector-0/0 - Dispatching POST request to /json-api/v4/ across connection Actor[akka://test/user/IO-HTTP/group-0/0]
+17:40:58.466 [test-akka.actor.default-dispatcher-4] DEBUG s.can.client.HttpClientConnection - now monitoring Actor[akka://test/user/IO-HTTP/host-connector-0/0]
+17:40:58.502 [test-akka.actor.default-dispatcher-4] DEBUG akka://test/user/IO-HTTP/group-0/0 - Encrypting 213 bytes
+17:40:58.541 [test-akka.actor.default-dispatcher-4] DEBUG akka://test/user/IO-HTTP/group-0/0 - Decrypting 2566 bytes
+17:40:58.543 [test-akka.actor.default-dispatcher-4] DEBUG akka://test/user/IO-HTTP/group-0/0 - Decrypting 2480 bytes
+17:40:58.590 [test-akka.actor.default-dispatcher-4] DEBUG akka://test/user/IO-HTTP/group-0/0 - Decrypting 182 bytes
+17:40:58.610 [test-akka.actor.default-dispatcher-4] DEBUG akka://test/user/IO-HTTP/group-0/0 - Decrypting 0 bytes
+17:40:58.611 [test-akka.actor.default-dispatcher-4] DEBUG akka://test/user/IO-HTTP/group-0/0 - Encrypting 213 bytes
+17:40:58.611 [test-akka.actor.default-dispatcher-2] DEBUG akka://test/user/IO-HTTP/group-0/0 - Encrypting 213 bytes
+17:40:58.611 [test-akka.actor.default-dispatcher-2] DEBUG akka://test/user/IO-HTTP/group-0/0 - Encrypting 213 bytes
+17:40:58.635 [test-akka.actor.default-dispatcher-7] DEBUG akka://test/user/IO-HTTP/group-0/0 - Decrypting 47 bytes
+17:40:58.635 [test-akka.actor.default-dispatcher-7] DEBUG akka://test/user/IO-HTTP/group-0/0 - Decrypting 41 bytes
+17:40:58.637 [test-akka.actor.default-dispatcher-7] DEBUG akka://test/user/IO-HTTP/group-0/0 - Encrypting 213 bytes
+17:41:05.398 [test-akka.actor.default-dispatcher-4] DEBUG akka://test/user/IO-HTTP/group-0/0 - Decrypting 270 bytes
+17:41:05.414 [test-akka.actor.default-dispatcher-5] DEBUG akka.io.TcpOutgoingConnection - stopped
+17:41:05.428 [test-akka.actor.default-dispatcher-7] DEBUG akka://test/user/IO-HTTP/host-connector-0/0 - Delivering 200 OK response start for POST request to /json-api/v4/
+17:41:05.433 [test-akka.actor.default-dispatcher-4] DEBUG akka://test/user/IO-HTTP/host-connector-0/0 - Delivering 69 byte response chunk for POST request to /json-api/v4/
+17:41:05.436 [test-akka.actor.default-dispatcher-4] DEBUG s.can.client.HttpClientConnection - stopped monitoring Actor[akka://test/system/IO-TCP/selectors/$a/0]
+17:41:05.438 [test-akka.actor.default-dispatcher-4] DEBUG akka://test/user/IO-HTTP/host-connector-0/0 - Delivering ChunkedMessageEnd(,List()) for POST request to /json-api/v4/
+17:41:05.438 [test-akka.actor.default-dispatcher-6] DEBUG akka://test/user/IO-HTTP/host-connector-0/0 - Closing connection as indicated by last response
+17:41:05.441 [test-akka.actor.default-dispatcher-5] WARN  akka://test/user/IO-HTTP/group-0/0 - Received illegal response: Unexpected server response
+17:41:05.441 [test-akka.actor.default-dispatcher-5] DEBUG akka://test/user/IO-HTTP/group-0/0 - Closing SSLEngine due to reception of Close
+17:41:05.442 [test-akka.actor.default-dispatcher-5] DEBUG akka://test/user/IO-HTTP/group-0/0 - Encrypting 0 bytes
+17:41:05.443 [test-akka.actor.default-dispatcher-5] DEBUG akka://test/user/IO-HTTP/group-0/0 - Stopping connection actor, connection was PeerClosed
+17:41:05.443 [test-akka.actor.default-dispatcher-6] DEBUG s.can.client.HttpClientConnection - stopped
